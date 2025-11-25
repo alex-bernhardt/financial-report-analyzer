@@ -1,50 +1,50 @@
-# Financial Report Analyzer 🔍📊
+# Financial Report Analyzer
 
-Ein Python-Tool, das Jahres- und Quartalsberichte (z. B. 10-K / 10-Q) von Unternehmen automatisch herunterlädt, die wichtigsten Finanzkennzahlen extrahiert, Trends erkennt, Risiken markiert und alles übersichtlich als Dashboard oder PDF-Report ausgibt – in wenigen Minuten statt stundenlangem Excel-Geklicke.
+A Python tool that automatically downloads annual and quarterly reports (e.g., 10-K / 10-Q) of U.S. companies, extracts the most important financial metrics, detects trends, highlights risks, and presents everything clearly in an interactive dashboard or PDF report — in just a few minutes instead of hours of manual Excel work.
 
 ## 🎯 Business Problem
 
-Die manuelle Analyse von Finanzberichten ist extrem zeitaufwendig: Ein einziger 10-K-Report hat oft 100–300 Seiten, wichtige Kennzahlen und Risiken sind über den ganzen Text verstreut.  
-Analysten, Investoren und Controller verbringen Stunden oder sogar Tage damit, Zahlen rauszusuchen, zu vergleichen und rote Flaggen zu erkennen – bei hoher Fehlerquote und immer unter Zeitdruck. Gerade kleinere Firmen und Privatpersonen können sich teure Tools wie Bloomberg oder Capital IQ oft nicht leisten.
+Manually analyzing financial reports is extremely time-consuming: A single 10-K report often has 100–300 pages, with key figures and risks scattered throughout the document.  
+Analysts, investors, and controllers spend hours—or even days—searching for numbers, comparing them, and spotting red flags, all under time pressure and with a high risk of errors. Smaller companies and private investors especially cannot afford expensive professional tools like Bloomberg or Capital IQ.
 
 ## 💡 Solution
 
-Mein Analyzer übernimmt genau diese Routinearbeit automatisch:
-- Lädt die aktuellsten SEC-Filings (10-K, 10-Q, 8-K) direkt von EDGAR herunter
-- Extrahiert automatisch Bilanz, GuV, Cashflow und über 50 wichtige Kennzahlen
-- Nutzt NLP, um Risikoparagraphen und Management-Kommentare zu analysieren
-- Vergleicht das Unternehmen automatisch mit Branchen-Peers
-- Spuckt alles als interaktives Dashboard oder sauberen PDF-Report aus
+My analyzer automates exactly this repetitive work:
+- Automatically downloads the latest SEC filings (10-K, 10-Q, 8-K) directly from EDGAR
+- Extracts balance sheets, income statements, cash flow statements, and over 50 key financial metrics
+- Uses NLP to analyze risk sections and management commentary
+- Automatically compares the company with industry peers
+- Outputs everything as an interactive dashboard or clean PDF report
 
-## 🚀 Key Features (geplant)
+## 🚀 Key Features (planned)
 
-- [ ] SEC Edgar Web Scraper (mit Rate-Limiting & Caching)
-- [ ] Financial Metrics Extraction (XBRL + PDF Text Parsing)
+- [ ] SEC EDGAR Web Scraper (with rate-limiting & caching)
+- [ ] Financial Metrics Extraction (XBRL + PDF text parsing)
 - [ ] NLP-based Sentiment Analysis & Risk Highlighting
-- [ ] Risk Classification Model („low / medium / high risk“)
-- [ ] Interactive Dashboard (Streamlit oder Plotly Dash)
+- [ ] Risk Classification Model (“low / medium / high risk”)
+- [ ] Interactive Dashboard (Streamlit or Plotly Dash)
 - [ ] Peer Company Comparison & Benchmarking
 
 ## 🛠️ Tech Stack
 
 - Python 3.11+
 - sec-edgar-downloader + BeautifulSoup / Playwright
-- pandas & numpy für die Zahlen
-- XBRL parsing (python-xbrl oder arelle)
-- spaCy / transformers (Hugging Face) für NLP
-- Streamlit (für schnelles schönes Dashboard)
-- scikit-learn für einfache Klassifizierungsmodelle
-- GitHub Actions für automatische Tests
+- pandas & numpy for data crunching
+- XBRL parsing (python-xbrl or Arelle)
+- spaCy / Hugging Face transformers for NLP
+- Streamlit (fast and beautiful dashboards)
+- scikit-learn for classification models
+- GitHub Actions for automated testing
 
 ## 📈 Expected Impact
 
-Reduziert die Analysezeit eines kompletten Jahresberichts von durchschnittlich 4–8 Stunden auf unter 5 Minuten – bei höherer Genauigkeit und immer gleicher Methodik.  
-Perfekt für Privatinvestoren, Studenten, Start-ups und kleine Analystenteams, die sonst keine teuren Profi-Tools nutzen können.
+Reduces the time required to analyze a full annual report from an average of 4–8 hours to under 5 minutes — with higher accuracy and consistent methodology.  
+Perfect for retail investors, students, startups, and small analyst teams who otherwise can’t access expensive professional tools.
 
 ## 🏗️ Project Status
 
-Currently in development - MVP Phase  
-(Erster funktionierender Prototyp läuft schon lokal!)
+Currently in development – MVP phase  
+(First working prototype already runs locally!)
 
 ---
-*Developed by Alex Bernhardt – HTL-Absolvent mit Leidenschaft für KI & Finance*
+*Developed by Alex Bernhardt – HTL graduate with a passion for AI & Finance*
