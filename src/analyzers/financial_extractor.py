@@ -84,24 +84,23 @@ class FinancialExtractor:
     def get_clean_metrics(self) -> dict:
         """
         Get cleaned, deduplicated financial metrics.
-        Returns only unique values in their ORIGINAL order (preserves time sequence).
+        Takes the 3 LARGEST unique values (assumption: larger = annual data).
         
         Returns:
-            dict: Cleaned metrics with max 3-4 values per metric
+            dict: Cleaned metrics with max 3 values per metric
         """
         raw_metrics = self.get_basic_metrics()
         cleaned = {}
         
         for metric_name, values in raw_metrics.items():
-            # Entferne Duplikate, ABER behalte die Reihenfolge!
-            seen = set()
-            unique_values = []
-            for val in values:
-                if val not in seen:
-                    seen.add(val)
-                    unique_values.append(val)
+            # Entferne Duplikate
+            unique_values = list(set(values))
             
-            # Nimm nur die ersten 3 (keine Sortierung nach Größe!)
+            # Sortiere nach Größe (größte = wahrscheinlich Jahresdaten)
+            unique_values.sort(reverse=True)
+            
+            # Nimm die Top 3 größten Werte
+            # (Für die meisten Metriken sind größere Werte = neuere/vollständige Daten)
             cleaned_values = unique_values[:3]
             
             if cleaned_values:
