@@ -43,8 +43,37 @@ Perfect for retail investors, students, startups, and small analyst teams who ot
 
 ## 🏗️ Project Status
 
-Currently in development – MVP phase  
-(First working prototype already runs locally!)
+✅ **MVP Complete!** 
+
+**What works:**
+- ✅ Automatic SEC 10-K filing downloads
+- ✅ Financial metrics extraction (Revenue, Net Income, Assets, etc.)
+- ✅ Data cleaning and deduplication
+- ✅ CSV export for further analysis
+- ✅ Command-line interface
+
+**Tested with:** Apple (AAPL), Microsoft (MSFT)
+
+## 🚀 Quick Start
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Analyze any US company
+python main.py AAPL
+python main.py TSLA
+python main.py GOOGL
+```
+
+## 📊 Sample Output
+```
+Financial Report Analyzer
+Target Company: MSFT
+Latest Revenue  : $217 778M
+Latest Net Income: $101 832M
+Latest Total Assets: $619 003M
+CSV saved to: data/processed/MSFT_financial_metrics.csv
+```
 
 ---
 *Developed by Alex Bernhardt – HTL graduate with a passion for AI & Finance*
