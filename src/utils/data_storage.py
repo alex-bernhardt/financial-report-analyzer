@@ -7,7 +7,7 @@ class DataStorage:
     Saves extracted financial metrics to CSV files for further analysis.
     """
     
-    def __init__(self, output_folder: str = "data/processed"):
+    def __init__(self, output_folder: str = "data/processed/metrics"):
         self.output_folder = Path(output_folder)
         self.output_folder.mkdir(parents=True, exist_ok=True)
     

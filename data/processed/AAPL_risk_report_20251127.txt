@@ -1,16 +1,16 @@
 ================================================================================
          RISK ANALYSIS REPORT: AAPL
 ================================================================================
-Generiert am: 2025-11-27 11:23:51
+Generiert am: 2025-11-27 12:36:44
 
 OVERALL RISK SCORE
 ----------------------------------------
-Score: 68.7 / 100   →   HIGH RISK High Risk
+Score: 65.2 / 100   →   HIGH RISK High Risk
 
 SENTIMENT ANALYSIS SUMMARY
 ----------------------------------------
-Analysierte Absätze: 20
-Durchschnitt:  Positiv 2.5%  |  Negativ 66.9%  |  Neutral 30.6%
+Analysierte Absätze: 30
+Durchschnitt:  Positiv 2.8%  |  Negativ 63.3%  |  Neutral 33.9%
 
 Riskoreichster Absatz (Preview):
    → Negativ-Score: 94.4%
@@ -18,18 +18,18 @@ Riskoreichster Absatz (Preview):
 
 KEYWORD ANALYSIS SUMMARY
 ----------------------------------------
-Gefundene kritische Keywords: 87
+Gefundene kritische Keywords: 130
 Top Risikokategorien:
-   • Operational: 22 Erwähnungen
-   • Financial: 21 Erwähnungen
-   • Market: 17 Erwähnungen
+   • Financial: 32 Erwähnungen
+   • Market: 26 Erwähnungen
+   • Legal: 26 Erwähnungen
 
 Top 5 Keywords:
-   • "financial condition" → 15x
-   • "reputation" → 10x
-   • "manufacturing" → 8x
-   • "demand" → 8x
-   • "regulatory" → 6x
+   • "financial condition" → 23x
+   • "reputation" → 14x
+   • "demand" → 12x
+   • "regulatory" → 11x
+   • "manufacturing" → 9x
 
 TOP 3 RISKOREICHSTE ABSÄTZE
 ----------------------------------------
@@ -47,7 +47,7 @@ TOP 3 RISKOREICHSTE ABSÄTZE
 
 ZUSAMMENFASSUNG & EMPFEHLUNG
 ----------------------------------------
-HOHES RISIKO! Dringende Handlungsempfehlung: Sofortige Analyse der Bereiche operational, financial, market, mögliche Reduzierung der Position oder Absicherung.
+HOHES RISIKO! Dringende Handlungsempfehlung: Sofortige Analyse der Bereiche financial, market, legal, mögliche Reduzierung der Position oder Absicherung.
 
 Ende des Berichts.
 ================================================================================
