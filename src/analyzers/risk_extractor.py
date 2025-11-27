@@ -84,7 +84,7 @@ class RiskExtractor:
         print("Kein Risk Factors gefunden – das sollte nicht passieren")
         return ""
 
-    def extract_risk_paragraphs(self, risk_text: str = None) -> List[str]:
+    def extract_risk_paragraphs(self, risk_text: str = None, max_paragraphs: int = 30) -> List[str]:
         if not risk_text:
             risk_text = self.find_risk_section()
         if not risk_text or len(risk_text) < 10000:
@@ -165,4 +165,4 @@ class RiskExtractor:
                 risks.append(cleaned)
 
         print(f"Extracted {len(risks)} echte Risikoparagraphen")
-        return risks
+        return risks[:max_paragraphs]

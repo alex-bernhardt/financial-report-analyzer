@@ -1,0 +1,53 @@
+================================================================================
+         RISK ANALYSIS REPORT: AAPL
+================================================================================
+Generiert am: 2025-11-27 11:23:51
+
+OVERALL RISK SCORE
+----------------------------------------
+Score: 68.7 / 100   →   HIGH RISK High Risk
+
+SENTIMENT ANALYSIS SUMMARY
+----------------------------------------
+Analysierte Absätze: 20
+Durchschnitt:  Positiv 2.5%  |  Negativ 66.9%  |  Neutral 30.6%
+
+Riskoreichster Absatz (Preview):
+   → Negativ-Score: 94.4%
+   → "The Company’s products and services may be affected from time to time by design and manufacturing de..."
+
+KEYWORD ANALYSIS SUMMARY
+----------------------------------------
+Gefundene kritische Keywords: 87
+Top Risikokategorien:
+   • Operational: 22 Erwähnungen
+   • Financial: 21 Erwähnungen
+   • Market: 17 Erwähnungen
+
+Top 5 Keywords:
+   • "financial condition" → 15x
+   • "reputation" → 10x
+   • "manufacturing" → 8x
+   • "demand" → 8x
+   • "regulatory" → 6x
+
+TOP 3 RISKOREICHSTE ABSÄTZE
+----------------------------------------
+1. Absatz #10 – Negativ: 94.4%
+   Sentiment: NEGATIVE
+   → "The Company’s products and services may be affected from time to time by design and manufacturing de..."
+
+2. Absatz #2 – Negativ: 94.1%
+   Sentiment: NEGATIVE
+   → "As a result, the Company’s operations and performance depend significantly on global and regional ec..."
+
+3. Absatz #6 – Negativ: 93.9%
+   Sentiment: NEGATIVE
+   → "Competition has been particularly intense as competitors have aggressively cut prices and lowered pr..."
+
+ZUSAMMENFASSUNG & EMPFEHLUNG
+----------------------------------------
+HOHES RISIKO! Dringende Handlungsempfehlung: Sofortige Analyse der Bereiche operational, financial, market, mögliche Reduzierung der Position oder Absicherung.
+
+Ende des Berichts.
+================================================================================
