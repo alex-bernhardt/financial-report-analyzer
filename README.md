@@ -2,6 +2,67 @@
 
 A Python tool that automatically downloads annual and quarterly reports (e.g., 10-K / 10-Q) of U.S. companies, extracts the most important financial metrics, detects trends, highlights risks, and presents everything clearly in an interactive dashboard or PDF report — in just a few minutes instead of hours of manual Excel work.
 
+## 🚀 Quick Start
+
+### Installation
+```bash
+git clone https://github.com/DEIN-USERNAME/financial-report-analyzer
+cd financial-report-analyzer
+pip install -r requirements.txt
+```
+
+### Usage
+
+**Option 1: Financial Metrics Only (⚡ 30 seconds)**
+```bash
+python main.py AAPL
+```
+**Output:** CSV with Revenue, Net Income, Total Assets
+
+**Option 2: Complete AI Analysis (🤖 ~3 minutes)**
+```bash
+python main.py AAPL --full-analysis
+```
+**Output:**
+- 📊 Financial metrics (CSV)
+- 📄 AI risk analysis report (TXT)
+- 🎯 FinBERT sentiment scores
+- 🔍 130+ critical keyword findings
+- ⚠️ Risk score (0-100 scale)
+
+**Custom Parameters:**
+```bash
+python main.py GOOGL --full-analysis --company-name "Your Name" --email "your@email.com"
+```
+
+### 📊 Sample Output
+
+**AAPL Analysis Results:**
+```
+================================================================================
+         RISK ANALYSIS REPORT: AAPL
+================================================================================
+OVERALL RISK SCORE: 65.2 / 100   →   HIGH RISK
+
+SENTIMENT ANALYSIS:
+  Analyzed Paragraphs: 30
+  Average: 63.3% Negative | 33.9% Neutral | 2.8% Positive
+  
+KEYWORD FINDINGS:
+  Total Keywords: 130
+  Top Categories: Financial (32), Market (26), Legal (26)
+  Top Keywords: "financial condition" (23x), "reputation" (14x)
+  
+TOP RISK:
+  "Design and manufacturing defects" → 94.4% Negative Sentiment
+  
+RECOMMENDATION:
+  HIGH RISK detected - Immediate analysis of financial, market, and legal areas recommended
+================================================================================
+```
+
+---
+
 ## 🎯 Business Problem
 
 Manually analyzing financial reports is extremely time-consuming: A single 10-K report often has 100–300 pages, with key figures and risks scattered throughout the document.  
@@ -16,7 +77,7 @@ My analyzer automates exactly this repetitive work:
 - Automatically compares the company with industry peers
 - Outputs everything as an interactive dashboard or clean PDF report
 
-## 🚀 Key Features (planned)
+## 🚀 Key Features
 
 - [ ] SEC EDGAR Web Scraper (with rate-limiting & caching)
 - [ ] Financial Metrics Extraction (XBRL + PDF text parsing)
@@ -41,80 +102,6 @@ My analyzer automates exactly this repetitive work:
 Reduces the time required to analyze a full annual report from an average of 4–8 hours to under 5 minutes — with higher accuracy and consistent methodology.  
 Perfect for retail investors, students, startups, and small analyst teams who otherwise can’t access expensive professional tools.
 
-## 🏗️ Project Status
-
-✅ **MVP Complete!** 
-
-**What works:**
-- ✅ Automatic SEC 10-K filing downloads
-- ✅ Financial metrics extraction (Revenue, Net Income, Assets, etc.)
-- ✅ Data cleaning and deduplication
-- ✅ CSV export for further analysis
-- ✅ Command-line interface
-
-## 🚀 Quick Start
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Analyze any US company
-python main.py AAPL
-python main.py MSFT
-python main.py GOOGL
-```
-
-## ✅ Tested Companies
-
-- ✅ **Apple (AAPL)** - Full support
-- ✅ **Microsoft (MSFT)** - Full support
-- ✅ **Google (GOOGL)** - Full support
-
-## ⚠️ Known Limitations
-
-**Current Version (MVP):**
-- Uses HTML parsing which works well for most S&P 500 companies
-- Some companies (e.g., Tesla) use non-standard table formats
-- **Phase 2** will implement XBRL parsing for 100% reliability
-
-## 📊 Example Output
-
-### Command:
-```bash
-python main.py AAPL
-```
-
-### Result:
-```
-Financial Report Analyzer
-Target Company: AAPL
-Latest Revenue     : $209,586M
-Latest Net Income  : $112,010M
-Latest Total Assets: $364,980M
-
-CSV saved to: data/processed/AAPL_financial_metrics.csv
-```
-
-## 🤖 Phase 2: AI-Powered Risk Analysis (COMPLETE!)
-
-**NEW Features:**
-- ✅ **FinBERT Sentiment Analysis** - State-of-the-art financial NLP
-- ✅ **Intelligent Keyword Scanner** - 6 risk categories, 50+ keywords
-- ✅ **Risk Scoring Algorithm** - 0-100 scale with automatic classification
-- ✅ **Professional Report Generation** - Actionable insights & recommendations
-
-**Usage:**
-```bash
-python test_full_risk_analysis.py
-```
-
-**Sample Output:**
-```
-OVERALL RISK SCORE: 68.7/100 → HIGH RISK
-Sentiment: 66.9% Negative | 30.6% Neutral | 2.5% Positive
-Keywords Found: 87 (Operational: 22, Financial: 21, Market: 17)
-Top Risk: "Design and manufacturing defects" (94.4% negative)
-```
-
 ## 📊 What Makes This Project Special
 
 **Business Impact:**
@@ -135,4 +122,4 @@ Top Risk: "Design and manufacturing defects" (94.4% negative)
 - 🤖 ML Engineering positions
 
 ---
-*Developed by Alex Bernhardt – HTL graduate with a passion for AI & Finance*
+*Developed by Alex Bernhardt
