@@ -12,7 +12,7 @@ import numpy as np
 
 # Phase 1: Immer benötigt
 from src.scrapers.sec_downloader import SECDownloader
-from src.analyzers.financial_extractor import FinancialExtractor
+from src.analyzers.unified_extractor import UnifiedExtractor as FinancialExtractor
 from src.utils.data_storage import DataStorage
 
 

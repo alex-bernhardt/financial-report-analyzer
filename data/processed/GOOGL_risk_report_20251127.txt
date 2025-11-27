@@ -1,0 +1,53 @@
+================================================================================
+         RISK ANALYSIS REPORT: GOOGL
+================================================================================
+Generiert am: 2025-11-27 16:20:01
+
+OVERALL RISK SCORE
+----------------------------------------
+Score: 48.8 / 100   →   MEDIUM RISK Medium Risk
+
+SENTIMENT ANALYSIS SUMMARY
+----------------------------------------
+Analysierte Absätze: 12
+Durchschnitt:  Positiv 3.3%  |  Negativ 45.3%  |  Neutral 51.4%
+
+Riskoreichster Absatz (Preview):
+   → Negativ-Score: 80.0%
+   → "Problematic content on our platforms, including low-quality user-generated content, web spam, conten..."
+
+KEYWORD ANALYSIS SUMMARY
+----------------------------------------
+Gefundene kritische Keywords: 65
+Top Risikokategorien:
+   • Legal: 27 Erwähnungen
+   • Financial: 13 Erwähnungen
+   • Reputation: 9 Erwähnungen
+
+Top 5 Keywords:
+   • "regulatory" → 10x
+   • "financial condition" → 9x
+   • "litigation" → 8x
+   • "reputation" → 6x
+   • "compliance" → 4x
+
+TOP 3 RISKOREICHSTE ABSÄTZE
+----------------------------------------
+1. Absatz #2 – Negativ: 80.0%
+   Sentiment: NEGATIVE
+   → "Problematic content on our platforms, including low-quality user-generated content, web spam, conten..."
+
+2. Absatz #6 – Negativ: 70.0%
+   Sentiment: NEGATIVE
+   → "Furthermore, in December 2020, several State Attorneys General, led by the Texas Attorney General, f..."
+
+3. Absatz #11 – Negativ: 61.2%
+   Sentiment: NEGATIVE
+   → "Our Board of Directors could rely on Delaware law to prevent or delay an acquisition of us. The trad..."
+
+ZUSAMMENFASSUNG & EMPFEHLUNG
+----------------------------------------
+Mittleres Risiko erkannt – insbesondere in den Bereichen legal, financial. Empfehlung: Detaillierte Prüfung der Risikofaktoren und Monitoring der Entwicklung.
+
+Ende des Berichts.
+================================================================================
