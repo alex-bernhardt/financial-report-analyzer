@@ -15,9 +15,10 @@ Automated financial analysis tool that downloads SEC 10-K filings, extracts key 
 ```bash
 git clone https://github.com/YOUR-USERNAME/financial-report-analyzer
 cd financial-report-analyzer
-python -m venv venvWindows
-.\venv\Scripts\activateMac/Linux
-source venv/bin/activatepip install -r requirements.txt
+python -m venv venv
+.\venv\Scripts\activate #Windows
+source venv/bin/activatepip #Mac/Linux
+install -r requirements.txt
 ```
 ### Usage
 
