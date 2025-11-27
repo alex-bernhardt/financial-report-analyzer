@@ -12,20 +12,25 @@ Automated financial analysis tool that downloads SEC 10-K filings, extracts key 
 ## 🚀 Quick Start
 
 ### Installation
-```bashgit clone https://github.com/YOUR-USERNAME/financial-report-analyzer
+```bash
+git clone https://github.com/YOUR-USERNAME/financial-report-analyzer
 cd financial-report-analyzer
 python -m venv venvWindows
 .\venv\Scripts\activateMac/Linux
 source venv/bin/activatepip install -r requirements.txt
-
+```
 ### Usage
 
 **Option 1: Financial Metrics Only** *(30 seconds)*
-```bashpython main.py AAPL
+```bash
+python main.py AAPL
+```
 **Output:** CSV with Revenue, Net Income, Total Assets
 
 **Option 2: Complete AI Analysis** *(~3 minutes)*
-```bashpython main.py AAPL --full-analysis
+```bash
+python main.py AAPL --full-analysis
+```
 **Output:**
 - 📊 Financial metrics (CSV)
 - 📄 AI risk analysis report (TXT)
@@ -34,8 +39,9 @@ source venv/bin/activatepip install -r requirements.txt
 - ⚠️ Risk score (0-100 scale)
 
 **Custom Parameters:**
-```bashpython main.py TSLA --full-analysis --company-name "Your Name" --email "your@email.com"
-
+```bash
+python main.py TSLA --full-analysis --company-name "Your Name" --email "your@email.com"
+```
 ---
 
 ## 📊 Demo Output
