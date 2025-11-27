@@ -141,12 +141,14 @@ HIGH RISK - Immediate analysis of financial, market, and legal areas recommended
 - **sec-edgar-downloader** - SEC EDGAR API
 
 **Key Libraries:**
-```pythonsec-edgar-downloader  # SEC filings download
+```
+python sec-edgar-downloader  # SEC filings download
 beautifulsoup4        # HTML/XML parsing
 pandas               # Data processing
 transformers         # FinBERT NLP model
 torch                # Deep learning
 lxml                 # XBRL parsing
+```
 
 **Architecture:**
 - Modular design (separate extractors for each task)
