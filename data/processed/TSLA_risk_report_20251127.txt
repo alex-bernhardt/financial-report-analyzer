@@ -1,0 +1,53 @@
+================================================================================
+         RISK ANALYSIS REPORT: TSLA
+================================================================================
+Generiert am: 2025-11-27 16:54:22
+
+OVERALL RISK SCORE
+----------------------------------------
+Score: 58.6 / 100   →   MEDIUM RISK Medium Risk
+
+SENTIMENT ANALYSIS SUMMARY
+----------------------------------------
+Analysierte Absätze: 9
+Durchschnitt:  Positiv 2.6%  |  Negativ 55.7%  |  Neutral 41.7%
+
+Riskoreichster Absatz (Preview):
+   → Negativ-Score: 89.2%
+   → "For example, our Fremont Factory and Gigafactory Nevada are located in seismically active regions in..."
+
+KEYWORD ANALYSIS SUMMARY
+----------------------------------------
+Gefundene kritische Keywords: 46
+Top Risikokategorien:
+   • Financial: 14 Erwähnungen
+   • Legal: 14 Erwähnungen
+   • Operational: 6 Erwähnungen
+
+Top 5 Keywords:
+   • "financial condition" → 7x
+   • "regulatory" → 5x
+   • "litigation" → 4x
+   • "debt" → 3x
+   • "compliance" → 3x
+
+TOP 3 RISKOREICHSTE ABSÄTZE
+----------------------------------------
+1. Absatz #4 – Negativ: 89.2%
+   Sentiment: NEGATIVE
+   → "For example, our Fremont Factory and Gigafactory Nevada are located in seismically active regions in..."
+
+2. Absatz #8 – Negativ: 88.9%
+   Sentiment: NEGATIVE
+   → "The stock market in general, and the market for technology companies in particular, has experienced ..."
+
+3. Absatz #6 – Negativ: 74.8%
+   Sentiment: NEGATIVE
+   → "If regulations and policies are introduced that adversely impact the import or export of components,..."
+
+ZUSAMMENFASSUNG & EMPFEHLUNG
+----------------------------------------
+Mittleres Risiko erkannt – insbesondere in den Bereichen financial, legal. Empfehlung: Detaillierte Prüfung der Risikofaktoren und Monitoring der Entwicklung.
+
+Ende des Berichts.
+================================================================================
