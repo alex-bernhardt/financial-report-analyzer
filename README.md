@@ -4,25 +4,16 @@ A Python tool that automatically downloads annual and quarterly reports (e.g., 1
 
 ## 🚀 Quick Start
 
-### Installation
-```bash
+```markdown
+### Erster Start immer gleich (kopiere diese 5 Zeilen!)
+```powershell
 git clone https://github.com/DEIN-USERNAME/financial-report-analyzer
 cd financial-report-analyzer
+python -m venv venv
+.\venv\Scripts\activate    # Windows
+# source venv/bin/activate # Mac/Linux
 pip install -r requirements.txt
-```
-
-### Usage
-
-**Option 1: Financial Metrics Only (⚡ 30 seconds)**
-```bash
 python main.py AAPL
-```
-**Output:** CSV with Revenue, Net Income, Total Assets
-
-**Option 2: Complete AI Analysis (🤖 ~3 minutes)**
-```bash
-python main.py AAPL --full-analysis
-```
 **Output:**
 - 📊 Financial metrics (CSV)
 - 📄 AI risk analysis report (TXT)
