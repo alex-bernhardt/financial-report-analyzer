@@ -52,8 +52,6 @@ Perfect for retail investors, students, startups, and small analyst teams who ot
 - ✅ CSV export for further analysis
 - ✅ Command-line interface
 
-**Tested with:** Apple (AAPL), Microsoft (MSFT)
-
 ## 🚀 Quick Start
 ```bash
 # Install dependencies
@@ -61,19 +59,48 @@ pip install -r requirements.txt
 
 # Analyze any US company
 python main.py AAPL
-python main.py TSLA
+python main.py MSFT
 python main.py GOOGL
 ```
 
-## 📊 Sample Output
+## ✅ Tested Companies
+
+- ✅ **Apple (AAPL)** - Full support
+- ✅ **Microsoft (MSFT)** - Full support
+- ✅ **Google (GOOGL)** - Full support
+
+## ⚠️ Known Limitations
+
+**Current Version (MVP):**
+- Uses HTML parsing which works well for most S&P 500 companies
+- Some companies (e.g., Tesla) use non-standard table formats
+- **Phase 2** will implement XBRL parsing for 100% reliability
+
+## 📊 Example Output
+
+### Command:
+```bash
+python main.py AAPL
+```
+
+### Result:
 ```
 Financial Report Analyzer
-Target Company: MSFT
-Latest Revenue  : $217 778M
-Latest Net Income: $101 832M
-Latest Total Assets: $619 003M
-CSV saved to: data/processed/MSFT_financial_metrics.csv
+Target Company: AAPL
+Latest Revenue     : $209,586M
+Latest Net Income  : $112,010M
+Latest Total Assets: $364,980M
+
+CSV saved to: data/processed/AAPL_financial_metrics.csv
 ```
+
+## 🎯 Use Cases
+
+Perfect for:
+- 🎓 Students learning financial analysis
+- 💼 Investors screening multiple companies
+- 📊 Consultants preparing client reports
+- 🤖 Researchers building financial datasets
 
 ---
 *Developed by Alex Bernhardt – HTL graduate with a passion for AI & Finance*

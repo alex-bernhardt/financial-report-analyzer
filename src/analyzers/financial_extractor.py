@@ -33,10 +33,9 @@ class FinancialExtractor:
             List[float]: List of all numeric values found in <td class="nump"> cells 
                         of the matching rows.
         """
-        soup = self.soup if hasattr(self, 'soup') else BeautifulSoup(self.html, 'html.parser')
         results = []
 
-        for tag in soup.find_all(['td', 'a'], string=re.compile(re.escape(search_text), re.IGNORECASE)):
+        for tag in self.soup.find_all(['td', 'a'], string=re.compile(re.escape(search_text), re.IGNORECASE)):
             row = tag.find_parent('tr')
             if not row:
                 continue
@@ -45,14 +44,14 @@ class FinancialExtractor:
             for cell in num_cells:
                 text = cell.get_text(strip=True)
                 cleaned = text.replace(',', '').strip()
-                cleaned = cleaned.replace('\xa0', '')  # non-breaking space
+                cleaned = cleaned.replace('\xa0', '')
 
                 try:
                     value = float(cleaned)
                     results.append(value)
                 except ValueError:
                     continue
-
+        
         return results
     
     def get_basic_metrics(self) -> dict:
@@ -80,7 +79,6 @@ class FinancialExtractor:
                     break  
 
         return metrics
-    
     def get_clean_metrics(self) -> dict:
         """
         Get cleaned, deduplicated financial metrics.
@@ -93,14 +91,10 @@ class FinancialExtractor:
         cleaned = {}
         
         for metric_name, values in raw_metrics.items():
-            # Entferne Duplikate
             unique_values = list(set(values))
             
-            # Sortiere nach Größe (größte = wahrscheinlich Jahresdaten)
             unique_values.sort(reverse=True)
             
-            # Nimm die Top 3 größten Werte
-            # (Für die meisten Metriken sind größere Werte = neuere/vollständige Daten)
             cleaned_values = unique_values[:3]
             
             if cleaned_values:
